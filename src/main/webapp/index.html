@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	 <script src="script.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gentium+Book+Plus:ital,wght@1,700&family=Poppins:wght@100&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="phoneSize">
+     <img id="size" src="iOS 8.jpg"/>
+     <div id ="phonelayer">
+     		<div id="notch"></div>
+            <div id="search">
+               <input type="text" placeholder="Search Location" id="Location" autocomplete="off" value=""> 
+               <i class="fa-solid fa-magnifying-glass" id="searchbutton" onclick="getDistrictNameFromUser()"></i>
+            </div>
+            <div id="region">
+             <div id="placeName" class="fontsize boldness">Tenkasi, Tamil Nadu</div>
+             <div id="condition" class="fontsize">Broken Clouds</div>
+            </div>
+     		<div id="WholeWeatherDetails">
+     		 <div id="sub">
+     		     <div id="weatherTemp">
+     		           <span class="celsius" id="cel">26°</span>
+     		       	   <span class="highAndlow" id="highLow">H:35°  L:23°</span>
+     		     </div>
+     		     <div id="monthWeatherTemp">
+     		    	 <div id="subDiv"></div>
+     		     </div>
+     		     <div id="weekWeatherTemp">
+     		        <div id="subDiv1"></div>
+     		     </div>
+     		     <div id="weatherTempDetail1">
+     		       	<div class="smallDivs">
+     		       	   <span class="topic">SUNRISE</span>
+     		       	   <span class="result" id="sunrise">06:25</span>
+     		       	</div>
+     		        <div class="smallDivs">
+     		           <span class="topic">SUNSET</span>
+     		           <span class="result" id="sunset">18:31</span>
+     		        </div>
+     		     </div>
+     		     <div id="weatherTempDetail2">
+     		       	<div class="smallDivs">
+     		       	   <span class="topic">CLOUDINESS</span>
+     		       	   <span class="result" id="cloudiness">60%</span>
+     		       	</div>
+     		        <div class="smallDivs">
+     		           <span class="topic">HUMIDITY</span>
+     		           <span class="result" id="humidity">80%</span>
+     		        </div>
+     		     </div>
+     		     <div id="weatherTempDetail3">
+     		       	<div class="smallDivs">
+     		       	   <span class="topic">WIND</span>
+     		       	   <span class="result" id="wind">ENE 4 km/h</span>
+     		       	</div>
+     		        <div class="smallDivs">
+     		           <span class="topic">FEELS LIKE</span>
+     		           <span class="result" id="feelslike">27°</span>
+     		        </div>
+     		     </div>
+     		     <div id="weatherTempDetail4">
+     		       	<div class="smallDivs">
+     		       	   <span class="topic">PRECIPITATION</span>
+     		       	   <span class="result" id="precipitation">0.0 mm</span>
+     		       	</div>
+     		        <div class="smallDivs">
+     		           <span class="topic">PRESSURE</span>
+     		           <span class="result" id="pressure">1012 hpa</span>
+     		        </div>
+     		     </div>
+     		    <div id="weatherTempDetail5">
+     		       	<div class="smallDivs">
+     		       	   <span class="topic">VISIBILITY</span>
+     		       	   <span class="result" id="visibility">10.0 km</span>
+     		       	</div>
+     		        <div class="smallDivs">
+     		           <span class="topic">UV INDEX</span>
+     		           <span class="result" id="uvIndex">0</span>
+     		        </div>
+     		     </div>
+     		     <div id="weatherRegion">Weather for Tamil Nadu</div>
+     		    </div>
+     		</div>
+     		<div id="bottom"></div>
+     </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
