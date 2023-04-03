@@ -68,7 +68,7 @@ public class Weather_Conditions {
 				weathers.add(object);
 			 } catch (ParseException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e.getMessage();
 			}
 		 }
 		 

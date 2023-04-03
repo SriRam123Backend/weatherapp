@@ -128,7 +128,7 @@ function monthweather(arrayDetails)
 	{
 		icon.innerHTML="<i class='fa-solid fa-cloud icon'></i>"
 	}
-	else if(arrayDetails.weatherCondition=="Heavy rain" || arrayDetails.weatherCondition=="Moderate rain at times" || arrayDetails.weatherCondition=="Moderate rain")
+	else if(arrayDetails.weatherCondition=="Heavy rain" || arrayDetails.weatherCondition=="Moderate rain at times" || arrayDetails.weatherCondition=="Moderate rain" || arrayDetails.weatherCondition=="Light rain shower" || arrayDetails.weatherCondition=="Moderate or heavy rain shower")
 	{
 		icon.innerHTML="<i class='fa-solid fa-cloud-showers-heavy icon'></i>"
 	}
@@ -169,6 +169,8 @@ function weekweather(arrayDetails)
 	document.getElementById("subDiv1").appendChild(daysDiv);
 	daysDiv.setAttribute("class","daysDiv");
 	
+	console.log(arrayDetails);
+	
 	var daysArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	var day = document.createElement("div");
 	daysDiv.appendChild(day);
@@ -188,7 +190,7 @@ function weekweather(arrayDetails)
 	{
 		icon.innerHTML="<i class='fa-solid fa-cloud icon'></i>"
 	}
-	else if(arrayDetails.Weather_Condition=="Heavy rain" || arrayDetails.Weather_Condition=="Moderate rain" || arrayDetails.Weather_Condition=="Moderate rain at times")
+	else if(arrayDetails.Weather_Condition=="Heavy rain" || arrayDetails.Weather_Condition=="Moderate rain" || arrayDetails.Weather_Condition=="Moderate rain at times" || arrayDetails.Weather_Condition=="Light rain shower" || arrayDetails.Weather_Condition=="Moderate or heavy rain shower")
 	{
 		icon.innerHTML="<i class='fa-solid fa-cloud-showers-heavy icon'></i>"
 	}

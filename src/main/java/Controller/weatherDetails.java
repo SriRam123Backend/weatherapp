@@ -58,7 +58,7 @@ public class weatherDetails extends HttpServlet {
 				
 		  try
 		  {
-			URL url = new URL("https://api.weatherapi.com/v1/forecast.json?key=c062c619d1b64d37b4740746231803&q="+location+"&days=8");
+			URL url = new URL("https://api.weatherapi.com/v1/forecast.json?key=c83e081ba660405ea1b41846230304&q="+location+"&days=8");
 			
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
@@ -94,7 +94,8 @@ public class weatherDetails extends HttpServlet {
 				Weather_Details result = Weather_Conditions.getInstance().getWeather(Weather_Details);
 				ArrayList<Weather_Details_Of_Day>result1 = Weather_Conditions.getInstance().getAweekWeather(Weather_Details_Of_A_Day);
 				Weather_Location result2 = Weather_Conditions.getInstance().getLocation(Weather_Locations);
-				ArrayList<Weather_Details> result3 = Weather_Conditions.getInstance().getTwoHoursWeather(Weather_Details_Of_A_Day);
+				ArrayList<Weather_Details> result3 = Weather_Conditions.getInstance().getTwoHoursWeather(Weather_Details_Of_A_Day);			
+
 				
 				JSONObject details = new JSONObject();
 				details.put("Message","Successful");
