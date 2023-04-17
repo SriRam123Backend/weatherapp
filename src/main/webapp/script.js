@@ -6,7 +6,7 @@ var count = 1;
 console.log(document.getElementById("Location"));
 
 function weatherDetails(location)
-{
+{  
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function()
 	{
